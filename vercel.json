@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/scrape.js": {
+      "runtime": "nodejs18.17",
+      "memory": 1024
+    }
+  },
+  "build": {
+    "env": {
+      "PLAYWRIGHT_BROWSERS_PATH": "0"
+    }
+  }
+}
