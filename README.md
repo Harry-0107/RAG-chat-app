@@ -60,7 +60,7 @@ This project implements a Retrieval-Augmented Generation (RAG) chat application 
 
 The application is deployed on Vercel.
 
--   **Live Demo Link:** Still in progress 😭 ```rag-chat-app-weld.vercel.app``` (but the chatbox would still respond to your queries from the given sugesstions below, try asking what is the example domain or whats the live news, it works based on the data from previous url scrapings when hosted locally.) 
+-   **Live Demo Link:** Still in progress 😭 https://rag-chat-app-weld.vercel.app/ (but the chatbox would still respond to your queries from the given sugesstions below, try asking what is the example domain or whats the live news, it works based on the data from previous url scrapings when hosted locally.) 
 
 ## Usage
 
