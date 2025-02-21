@@ -1,8 +1,1 @@
-{
-  "functions": {
-    "api/scrape.js": {
-      "runtime": "nodejs18.17",
-      "memory": 1024
-    }
-  }
-}
+
