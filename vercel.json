@@ -1,12 +1,4 @@
 {
-  "build": {
-    "env": {
-      "PLAYWRIGHT_BROWSERS_PATH": "0"
-    }
-  }
-}
-
-{
   "functions": {
     "api/scrape.js": {
       "runtime": "nodejs20.x",
