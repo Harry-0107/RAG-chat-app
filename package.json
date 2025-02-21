@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+    "postinstall": "npx playwright install --with-deps"
   },
   "dependencies": {
     "@google/generative-ai": "^0.22.0",
