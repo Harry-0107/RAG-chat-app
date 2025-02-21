@@ -1,4 +1,4 @@
-# GenAI RAG Chat Application
+# RAG Chat Application with URL Scraping
 
 This project implements a Retrieval-Augmented Generation (RAG) chat application using Google Gemini, designed to scrape content from user-provided URLs and use it as a knowledge base for a chatbot.
 
