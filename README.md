@@ -111,3 +111,6 @@ The application is deployed on Vercel.
 - similarly, the backend wasn't properly communicating with pinecone and Gemini API to facilitate everything.
 - took a bit of time to properly debug line by line but was able to fix everything.
 
+7. Issues during Deployment. 
+- Vercel didn't support Puppeteer as it was missing "Chrome for Puppeteer", and it doesn't support running a full chrome browser.
+- so i had to switch to Playwright as it works better in serverless environments like vercel.
