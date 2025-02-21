@@ -60,7 +60,7 @@ This project implements a Retrieval-Augmented Generation (RAG) chat application 
 
 The application is deployed on Vercel.
 
--   **Live Demo Link:** [Your Live Demo URL]
+-   **Live Demo Link:** Still in progress 😭
 
 ## Usage
 
