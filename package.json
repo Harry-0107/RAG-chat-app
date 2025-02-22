@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "npm playwright install chromium --no-shell"
+    "postinstall": "npx playwright install chromium --no-shell"
   },
   "dependencies": {
     "@google/generative-ai": "^0.22.0",
