@@ -60,7 +60,8 @@ This project implements a Retrieval-Augmented Generation (RAG) chat application 
 
 The application is deployed on Vercel.
 
--   **Live Demo Link:** Still in progress 😭 https://rag-chat-app-weld.vercel.app/ (but the chatbox would still respond to your queries from the given sugesstions below, try asking what is the example domain or whats the live news, it works based on the data from previous url scrapings when hosted locally.) 
+-   **Live Demo Link:** rag-chat-app-weld.vercel.app
+ 
 
 ## Usage
 
@@ -114,3 +115,5 @@ The application is deployed on Vercel.
 7. Issues during Deployment. 
 - Vercel didn't support Puppeteer as it was missing "Chrome for Puppeteer", and it doesn't support running a full chrome browser.
 - so i had to switch to Playwright as it works better in serverless environments like vercel.
+- playwright actually needed more space for all its browser installations (around 500+mb) but vercel only offered 250mb for the serverless environment.
+- so i switched back to puppeteer-core but which only includes the essential functions along with a lightweight headless chromium browser to perform the scraping.
