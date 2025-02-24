@@ -70,10 +70,12 @@ The application is deployed on Vercel.
      - my personal suggestions would be, 
        - https://example.com (ask what is the example domain)
        - https://bbc.com/news (ask for current live news)
+       - https://simple.wikipedia.org/wiki/Cat /simple to make the website & content more easier to scrape (ask what a cat is 🐱)
        - https://en.wikipedia.org/wiki/Artificial_intelligence (ask what AI is)
        - and any other website you would like to scrape and know about.
 3.  Click the "Add URL" button to process the URLs.
-4.  Use the chat interface to ask questions related to the scraped content.
+4.  please wait for the application to scrape the given website, it may take upto a minute, and once it is scraped succesfully, you will see the website included down in the list, along with a sample of the scraped content.
+5.  Use the chat interface to ask questions related to the scraped content.
 
 ## Assumptions and Limitations
 
