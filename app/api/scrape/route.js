@@ -64,9 +64,9 @@
 //   }
 // }
 
-import { chromium } from "playwright";
+import puppeteer from "puppeteer-core";
+import chromium from "@sparticuz/chromium";
 import { Pinecone } from "@pinecone-database/pinecone";
-import chromiumAWS from "@sparticuz/chromium";
 
 const GEMINI_API_KEY = "AIzaSyCaG734rIXK93_ZVlfTHfINAXyd04iwBt8";
 const pinecone = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
@@ -82,14 +82,13 @@ export async function POST(req) {
       return new Response(JSON.stringify({ error: "No URL provided" }), { status: 400 });
     }
 
-    // Launch Playwright Chromium with AWS Lambda compatibility
-    const browser = await chromium.launch({
-      channel: 'chromium', // Use new headless mode
-      headless: true,      // Ensure headless mode is enabled
+    // Launch Puppeteer with serverless Chromium
+    const browser = await puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless,
     });
     
-    
-
     const page = await browser.newPage();
     await page.goto(textContent, { waitUntil: "domcontentloaded" });
 
