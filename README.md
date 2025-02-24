@@ -60,7 +60,7 @@ This project implements a Retrieval-Augmented Generation (RAG) chat application 
 
 The application is deployed on Vercel.
 
--   **Live Demo Link:** rag-chat-app-weld.vercel.app
+-   **Live Demo Link:** [rag-chat-app-weld.vercel.app](https://rag-chat-app-weld.vercel.app/)
  
 
 ## Usage
