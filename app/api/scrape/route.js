@@ -68,7 +68,7 @@ import puppeteer from "puppeteer-core";
 import chromium from "@sparticuz/chromium";
 import { Pinecone } from "@pinecone-database/pinecone";
 
-const GEMINI_API_KEY = "AIzaSyCaG734rIXK93_ZVlfTHfINAXyd04iwBt8";
+const GEMINI_API_KEY = process.env.AIzaSyCaG734rIXK93_ZVlfTHfINAXyd04iwBt8;
 const pinecone = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
 const index = pinecone.Index(process.env.PINECONE_INDEX_NAME);
 
