@@ -6,7 +6,7 @@ const index = pinecone.Index(process.env.PINECONE_INDEX_NAME);
 
 const GEMINI_API_KEY = "AIzaSyCaG734rIXK93_ZVlfTHfINAXyd04iwBt8";
 const GEMINI_EMBEDDING_URL = `https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=${GEMINI_API_KEY}`;
-const GEMINI_CHAT_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_CHAT_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro-vision-latest:generateContent?key=${GEMINI_API_KEY}`;
 
 export async function POST(req) {
   try {
