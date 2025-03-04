@@ -105,7 +105,7 @@ export async function POST(req) {
 
     // Get 768D embedding from Gemini API
     const embeddingResponse = await fetch(
-      `https://generativelanguage.googleapis.com/v1/models/embedding-001:embedContent?key=${GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1/models/text-embedding-004:embedContent?key=${GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -115,8 +115,9 @@ export async function POST(req) {
 
     const embeddingData = await embeddingResponse.json();
 
-    if (!embeddingData.embedding || !embeddingData.embedding.values) {
-      return new Response(JSON.stringify({ error: "Failed to generate embeddings from Gemini" }), { status: 500 });
+    if (!embeddingData || !embeddingData.embedding || !embeddingData.embedding.values) {
+        console.error("Invalid embedding data:", embeddingData);
+        return new Response(JSON.stringify({ error: "Failed to generate embeddings from Gemini" }), { status: 500 });
     }
 
     const vector = embeddingData.embedding.values;
