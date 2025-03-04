@@ -31,7 +31,7 @@ export async function POST(req) {
     const context = searchResults.matches.map((match) => match.metadata.text).join("\n");
 
     // Generate response using Gemini
-    const chatModel = genAI.getGenerativeModel({ model: "gemini-1.0-pro-vision-latest" });
+    const chatModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await chatModel.generateContent(`Context: ${context}\n\nUser: ${query}`);
 
     const responseText =
